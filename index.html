@@ -6,7 +6,9 @@
       <!--Import materialize.css-->
        <!-- Compiled and minified CSS -->
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    	<link rel="stylesheet" type="text/css" href="http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -45,52 +47,183 @@
 		    line-height: 1.15;
 		    letter-spacing: -.015em;
 		    color: rgba(0,0,0,0.77);
+		    background-color: whitesmoke;
 
 		}
-		.card .card-action{
-			    padding: 0;
-			    position: absolute;
+		.card .back-action{
+			    padding: 0 !important;
+			    position: absolute !important;
 			    bottom: 0;
-			    width: 90%;
+			    width: 90% !important;
 		}
+		nav .brand-logo{
+			padding-left: 15px;
+		}
+		.brand-logo a{
+			font-size: 0.6em;
+		}
+		.card .body{
+			height: 150px;
+		}
+		
+		#home{
+	background-image: url(img/developer-skills.jpg);
+	text-align: center;
+	background-color: black;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#home:before,
+#home:after{
+	content: "";
+	display: table;
+}
+#home:after{
+	clear: both;
+}
+
+#home h3{
+	color: white;
+	text-align: center;
+}
+.divisor{
+	height: 0px;
+	border: 1px solid white;
+	margin: 0 30%;
+}
+
+#encabezado{
+	font-size: 16px;
+	background-color: black;
+	padding: 0.3em 0;
+	position: fixed;
+	width: 100%;
+	z-index: 8;
+}
+#encabezado:before,
+#encabezado:after{
+	content: "";
+	display: table;
+}
+#encabezado:after{
+	clear: both;
+}
+.seccion{
+	background-attachment: fixed;
+	min-height: 43em;
+}
+#header-img{
+	border:3px solid white;
+	border-radius: 50%;
+    margin-top: 205px;
+    padding: 0;
+    width: 150px;
+}
+#Titulo{
+	color: white;
+	margin: auto;
+	text-align: center;
+	padding-top: .5em;
+	font-size: 3em;
+	vertical-align: middle;
+}
+.subtitulo{
+	font-size: 1.5em;
+}
+nav {
+    color: #6e6e6e;
+    background-color: #f5f5f5;
+}
+nav a {
+    color: #6e6e6e;
+}
+.effect-blur{
+	    width: 80%;
+    margin: 0 auto;
+    filter: none;
+    z-index: 19;
+    background: rgba(0, 0, 0, 0.36);
+}
+.effect-blur {
+  position: relative;
+  margin: 10vh auto 15vh;
+  border: 10px solid rgba(255,255,255,.15);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+  z-index: 5;
+}
+		
     </style>
     <body>
     	<div class="navbar-fixed">
     	 <nav>
 		    <div class="nav-wrapper">
-		      <a href="#!" class="brand-logo">Logo</a>
+		      <div class="brand-logo">
+		      	<a href="">EDWIGHT DELGADO</a>
+		      	
+		      </div>
 		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
-		        <li><a href="sass.html">Sass</a></li>
-		        <li><a href="badges.html">Components</a></li>
-		        <li><a href="collapsible.html">Javascript</a></li>
+		        <li><a href="#about">Acerca de Mi</a></li>
+		        <li><a href="#project">Proyectos</a></li>
+		        <li><a href="#skills">Habilidades</a></li>
 		        <li><a href="mobile.html">Mobile</a></li>
 		      </ul>
 		    </div>
 		  </nav>
 		</div>
 	  	<ul class="sidenav" id="mobile-demo">
-		    <li><a href="sass.html">Sass</a></li>
-		    <li><a href="badges.html">Components</a></li>
-		    <li><a href="collapsible.html">Javascript</a></li>
+		    <li><a href="#about">Acerca de Mi</a></li>
+		    <li><a href="#project">Proyectos</a></li>
+		    <li><a href="#skills">Habilidades</a></li>
 	    <li><a href="mobile.html">Mobile</a></li>
 	  </ul>
       <!--JavaScript at end of body for optimized loading-->
-      
+      <section class="seccion" id="home">
+		<div class="effect-blur">
+			<img id="header-img" src="https://es.gravatar.com/userimage/76713196/45d3780e6fd6d7298f8f2360e603b835.jpg?size=200">
+        	<h1 id="Titulo">Integra Consultores de Ags</h1>
+        	<h3 class="subtitulo">Donde tus sueños se vuelven realidad</h3>
+        	<div class="divisor"></div>
+        	<ul class="social-icons icon-rounded list-unstyled list-inline">
+        		<li class="social-icon">
+          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-github"></i></a>
+      			</li>
+      			<li class="social-icon">
+          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-bitbucket"></i></a>
+      			</li>
+      			<li class="social-icon">
+          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-codepen"></i></a>
+      			</li>
+      			<li class="social-icon">
+          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-linkedin"></i></a>
+      			</li>
+        	</ul>
+        	</div>
+		</section>
    	<section id="about">
-		<h3>Acerca de Mi</h3>
+		<h3 style="margin-top: 0;">Acerca de Mi</h3>
 			<div class="container"> 
 		        <div class="row">
 		          	<div class="col s12">
-						<div class="about">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</p><p> Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p> Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-					</div>
+					    <div class="card horizontal">
+						    <div class="card-stacked">
+							   	<div class="card-content">
+							       	<div class="about">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua.</p><p> Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+						    	</div>
+						        <div class="card-action">
+						          
+						        </div>
+						    </div>
+					    </div>
+					</div>	
 				</div>
 			</div>
 	</section>
@@ -103,7 +236,7 @@
 				        <div class="card-image waves-effect waves-block waves-light">
 				          <img class="activator" src="https://materializecss.com/images/office.jpg">
 				        </div>
-				        <div class="card-content">
+				        <div class="card-content body">
 				          <span class="card-title activator grey-text text-darken-4">Sistema de Emergencia 911 Falcón<i class="material-icons right">more_vert</i></span>
 				          <p><a href="#">This is a link</a></p>
 				        </div>
@@ -121,8 +254,8 @@
 				        <div class="card-image waves-effect waves-block waves-light">
 				          <img class="activator" src="https://materializecss.com/images/office.jpg">
 				        </div>
-				        <div class="card-content">
-				          <span class="card-title activator grey-text text-darken-4">Blog de Canto Lirico para Proyecto de Grado<i class="material-icons right">more_vert</i></span>
+				        <div class="card-content body">
+				          <span class="card-title activator grey-text text-darken-4">Blog de Canto Lirico<i class="material-icons right">more_vert</i></span>
 				          <p><a href="#">This is a link</a></p>
 				        </div>
 				        <div class="card-reveal">
@@ -140,7 +273,7 @@
 				        <div class="card-image waves-effect waves-block waves-light">
 				          <img class="activator" src="https://materializecss.com/images/office.jpg">
 				        </div>
-				        <div class="card-content">
+				        <div class="card-content body">
 				          <span class="card-title activator grey-text text-darken-4">Sistema de Control Estadistico Psuv<i class="material-icons right">more_vert</i></span>
 				          <p><a href="#">This is a link</a></p>
 				        </div>
@@ -158,7 +291,7 @@
 				        <div class="card-image waves-effect waves-block waves-light">
 				          <img class="activator" src="https://materializecss.com/images/office.jpg">
 				        </div>
-				        <div class="card-content">
+				        <div class="card-content body">
 				          <span class="card-title activator grey-text text-darken-4">Photogram Clon de Imstagram<i class="material-icons right">more_vert</i></span>
 				          <p><a href="#">This is a link</a></p>
 				        </div>
@@ -172,10 +305,11 @@
 					          <li>gulp para automatizacion de tareas</li>
 					          <li>babel.js para usar ultimas caracteristicas de javascript</li>
 					        </ul>
-				          <div class="card-action">
+				          <div class="card-action back-action">
 				          	<ul class="social-icons icon-circle list-unstyled list-inline"> 
-				          	<li> <a href="#"><i class="fa fa-bitbucket"></i></a> </li>
-				          	<li> <a href="#"><i class="fa fa-github"></i></a></li> 
+				          	<li> <a href="#"><i class="fab fa-bitbucket"></i></a> </li>
+				          	<li> <a href="#"><i class="fab fa-github"></i></a></li> 
+				          	<li> <a href="#"><i class="fab fa-share-square"></i></a></li>
 				          	</ul>
 				          </div>
 				        </div>
@@ -186,7 +320,7 @@
 				        <div class="card-image waves-effect waves-block waves-light">
 				          <img class="activator" src="https://materializecss.com/images/office.jpg">
 				        </div>
-				        <div class="card-content">
+				        <div class="card-content body">
 				          <span class="card-title activator grey-text text-darken-4">Republic Of Gamers Colombia/<i class="material-icons right">more_vert</i></span>
 				          <p><a href="#">This is a link</a></p>
 				        </div>
@@ -221,64 +355,59 @@
 		<h3>Habilidades</h3>
 			<div class="container"> 
         		<div class="row">
-        			<div class="col s12 m6">
+        			<div class="col s12 l6">
 					    <div class="card horizontal">
-					      <div class="card-image">
-					        <img src="https://lorempixel.com/100/190/nature/6">
-					      </div>
 					      <div class="card-stacked">
 					        <div class="card-content">
 					          <p>Frondten.</p>
 					        </div>
 					        <div class="card-action">
-					          <a href="#">This is a link</a>
+					          <ul class="social-icons icon-rounded list-unstyled list-inline"> 
+					          	<li> <a href="#"><i class="fab fa-css3"></i></a> </li> 
+					          	<li> <a href="#"><i class="fab fa-html5"></i></a></li> 
+					          	<li> <a href="#"><i class="fab fa-gulp"></i></a></li>
+					          	<li> <a href="#"><i class="fab fa-js"></i></a></li>
+					          	<li> <a href="#"><i class="fab fa-vuejs"></i></a></li>
+					          </ul>
 					        </div>
 					      </div>
 					    </div>
 					</div>
-					<div class="col s12 m6">
+					<div class="col s12 l6">
 					    <div class="card horizontal">
-					      <div class="card-image">
-					        <img src="https://lorempixel.com/100/190/nature/6">
-					      </div>
 					      <div class="card-stacked">
 					        <div class="card-content">
 					          <p>backend.</p>
+					          
 					        </div>
 					        <div class="card-action">
-					          <a href="#">This is a link</a>
+					          <ul class="social-icons icon-rounded list-unstyled list-inline"> 
+					          	<li> <a href="#"><i class="fab fa-node"></i></a> </li> 
+					          	<li> <a href="#"><i class="fab fa-laravel"></i></a></li>
+					          </ul>
 					        </div>
 					      </div>
 					    </div>
 					</div>
-					<div class="col s12 m6">
+					<div class="col s12 l6">
 					    <div class="card horizontal">
-					      <div class="card-image">
-					        <img src="https://lorempixel.com/100/190/nature/6">
-					      </div>
 					      <div class="card-stacked">
 					        <div class="card-content">
-					          <p>database.</p>
+					          <p>Base de Datos.</p>
 					        </div>
 					        <div class="card-action">
-					          <a href="#">This is a link</a>
-					        </div>
-					      </div>
-
-					    </div>
-					</div>
-					<div class="col s12 m6">
-					    <div class="card horizontal">
-					      <div class="card-image">
-					        <img src="https://lorempixel.com/100/190/nature/6">
-					      </div>
-					      <div class="card-stacked">
-					        <div class="card-content">
-					          <p>control de versiones.</p>
-					        </div>
-					        <div class="card-action">
-					          <a href="#">This is a link</a>
-					        </div>
+					        	<ul class="social-icons icon-rounded  list-unstyled list-inline"> 
+					          		<li> <a href="#">
+					          			<img src="img/web/mysql1.png">
+					          		</a> </li> 
+					          		<li> <a href="#">
+					          			<img src="img/web/mongodb1.png">
+					          		</a></li>
+					          		<li> <a href="#">
+					          			<img src="img/web/postgresql1.png">
+					          		</a></li>
+					        	</ul>
+					       	</div>
 					      </div>
 					    </div>
 					</div>
@@ -302,6 +431,9 @@
 
 		  $(document).ready(function(){
 		    $('.sidenav').sidenav();
+		  });
+		   $(document).ready(function(){
+		    $('.parallax').parallax();
 		  });
       </script>
     </body>
