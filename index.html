@@ -146,20 +146,88 @@ nav a {
     color: #6e6e6e;
 }
 .effect-blur{
-	    width: 80%;
+	width: 80%;
     margin: 0 auto;
     filter: none;
     z-index: 19;
     background: rgba(0, 0, 0, 0.36);
+  	position: relative;
+  	margin: 10vh auto 15vh;
+  	border: 10px solid rgba(255,255,255,.15);
+  	box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+  	z-index: 5;
 }
-.effect-blur {
-  position: relative;
-  margin: 10vh auto 15vh;
-  border: 10px solid rgba(255,255,255,.15);
-  box-shadow: 1px 1px 4px rgba(0,0,0,.3);
-  z-index: 5;
+
+.sidenav {
+    transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    will-change: left, width;
+    box-shadow: inset -1px 0 10px rgba(0, 0, 0, 0.4);
+    background: #e0e0e0;
 }
-		
+.sidenav:after {
+    content: '';
+    background-color: #253238;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 58px;
+}
+.sidenav {
+    list-style:none;
+    padding-left:58px;
+}
+.sidenav li {
+    padding:10px;
+    padding-left: 4.1em;
+}
+.sidenav .close {
+    z-index: 9999;
+    padding: 14px;
+    padding-left: 4.1em;
+    background-color: #253238;
+    text-align: -webkit-right;
+    text-align: right;
+}
+
+
+}
+.sidenav li a {
+    color:#fff;
+    display:block;
+}
+.sidenav li i {
+    float: left;
+    color: grey;
+    margin-left: -48px;
+    font-size: 24px;
+    padding-left: 7px;
+    padding-top: 15px;
+}
+.sidenav li:hover {
+    background:rgba(0,0,0,0.12);
+}
+.sidenav li a:hover {
+    color:#fff;
+    text-decoration:none;
+}
+.sidenav li:hover i {
+    color:#fff;
+}
+.sidenav li.active {
+    background:rgba(0,0,0,0.3);
+}
+.sidenav li.active i {
+    color:#fff;
+}
+.sidenav li.active:hover {
+    background:rgba(0,0,0,0.1);
+}
+.sidenav li.active:hover i {
+    color:#fff;
+}
+
+
     </style>
     <body>
     	<div class="navbar-fixed">
@@ -172,25 +240,21 @@ nav a {
 		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
 		        <li><a href="#about">Acerca de Mi</a></li>
-		        <li><a href="#project"></i>Proyectos</a></li>
-		        <li><a href="#skills"></i>Habilidades</a></li>
+		        <li><a href="#project">Proyectos</a></li>
+		        <li><a href="#skills">Habilidades</a></li>
 		        <li><a href="mobile.html">Mobile</a></li>
 		      </ul>
 		    </div>
 		  </nav>
 		</div>
-	  	<ul class="sidenav social-icons icon-rounded  list-unstyled list-inline" id="mobile-demo">
-		    <li class="waves-effect"><a href="#about">
-		    	<i class="fas fa-user"></i><span>Acerca de Mi</span></a>
-		    </li>
-		    <li><a href="#project">
-		    	<i class="fas fa-rocket"></i>Proyectos</a>
-		    </li>
-		    <li><a href="#skills">
-		    	<i class="fas fa-chart-bar"></i>Habilidades</a>
-		    </li>
-	    <li><a href="mobile.html">Mobile</a></li>
-	  </ul>
+	  	<ul class="sidenav" id="mobile-demo">
+	  		<div class="close"><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></div>
+            <li class="active"><i class="fas fa-user"></i><a href="#">Acerca de Mi</a></li>
+            <li><i class="fas fa-rocket"></i><a href="#">Proyectos</a></li>
+            <li><i class="fas fa-chart-bar"></i><a href="#">Habilidades</a></li>
+            <li><i class="fas fa-deaf"></i><a href="#">Educación</a></li>
+            
+	  	</ul>
       <!--JavaScript at end of body for optimized loading-->
       <section class="seccion" id="home">
 		<div class="effect-blur">
@@ -281,7 +345,7 @@ nav a {
 				          		<div class="card-action back-action">
 				          			<ul class="social-icons icon-circle list-unstyled list-inline"> 
 				          			<li> <a href="https://bitbucket.org/edwight/proyecto-orientacion-vocal/src/master/"><i class="fab fa-bitbucket"></i></a> 
-				          			<li> <a href="https://orientacion-vocal.herokuapp.com/"><i class="fab fa-share-square"></i></a></li>
+				          			<li> <a href="https://orientacion-vocal.herokuapp.com/"><i class="fas fa-share-square"></i></a></li>
 				          			</ul>
 
 				        		</div>
@@ -452,9 +516,6 @@ nav a {
 
 		  $(document).ready(function(){
 		    $('.sidenav').sidenav();
-		  });
-		   $(document).ready(function(){
-		    $('.parallax').parallax();
 		  });
       </script>
     </body>

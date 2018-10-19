@@ -42,11 +42,13 @@ hr{
 /*---- Genral classes end -------*/
 
 /*Change icons size here*/
-.social-icons .fab {
+.social-icons .fab,
+.social-icons .fas {
 	font-size: 1.8em;
 }
 /*Change icons circle size and color here*/
-.social-icons .fab {
+.social-icons .fab,
+.social-icons .fas {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -60,30 +62,36 @@ hr{
 	transition: all 0.3s ease-in-out;
 }
 
-.social-icons.icon-circle .fab{ 
+.social-icons.icon-circle .fab,
+.social-icons.icon-circle .fas{ 
 	border-radius: 50%;
 }
-.social-icons.icon-rounded .fab{
+.social-icons.icon-rounded .fab,
+.social-icons.icon-rounded .fas{
 	border-radius:5px;
 }
-.social-icons.icon-flat .fab{
+.social-icons.icon-flat .fab,
+.social-icons.icon-flat .fas{
 	border-radius: 0;
 }
 
-.social-icons .fab:hover, .social-icons .fab:active {
+.social-icons .fab:hover, .social-icons .fab:active,
+.social-icons .fas:hover, .social-icons .fas:active {
 	color: #FFF;
 	-webkit-box-shadow: 1px 1px 3px #333;
 	-moz-box-shadow: 1px 1px 3px #333;
 	box-shadow: 1px 1px 3px #333; 
 }
-.social-icons.icon-zoom .fab:hover, .social-icons.icon-zoom .fab:active { 
+.social-icons.icon-zoom .fab:hover, .social-icons.icon-zoom .fab:active,
+.social-icons.icon-zoom .fas:hover, .social-icons.icon-zoom .fas:active { 
  	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1); 
 }
-.social-icons.icon-rotate .fab:hover, .social-icons.icon-rotate .fab:active { 
+.social-icons.icon-rotate .fab:hover, .social-icons.icon-rotate .fab:active,
+.social-icons.icon-rotate .fas:hover, .social-icons.icon-rotate .fas:active { 
 	-webkit-transform: scale(1.1) rotate(360deg);
 	-moz-transform: scale(1.1) rotate(360deg);
 	-ms-transform: scale(1.1) rotate(360deg);
