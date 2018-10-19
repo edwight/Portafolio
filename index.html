@@ -11,6 +11,10 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+		<link rel="apple-touch-icon-precomposed" href="img/code-flat.png">
+
+      <link rel="icon" href="img/code-flat.png">
     </head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style type="text/css">
@@ -55,6 +59,9 @@
 			    position: absolute !important;
 			    bottom: 0;
 			    width: 90% !important;
+		}
+		.sidenav li>a:before {
+				font-style: f080;
 		}
 		nav .brand-logo{
 			padding-left: 15px;
@@ -165,38 +172,44 @@ nav a {
 		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
 		        <li><a href="#about">Acerca de Mi</a></li>
-		        <li><a href="#project">Proyectos</a></li>
-		        <li><a href="#skills">Habilidades</a></li>
+		        <li><a href="#project"></i>Proyectos</a></li>
+		        <li><a href="#skills"></i>Habilidades</a></li>
 		        <li><a href="mobile.html">Mobile</a></li>
 		      </ul>
 		    </div>
 		  </nav>
 		</div>
-	  	<ul class="sidenav" id="mobile-demo">
-		    <li><a href="#about">Acerca de Mi</a></li>
-		    <li><a href="#project">Proyectos</a></li>
-		    <li><a href="#skills">Habilidades</a></li>
+	  	<ul class="sidenav social-icons icon-rounded  list-unstyled list-inline" id="mobile-demo">
+		    <li class="waves-effect"><a href="#about">
+		    	<i class="fas fa-user"></i><span>Acerca de Mi</span></a>
+		    </li>
+		    <li><a href="#project">
+		    	<i class="fas fa-rocket"></i>Proyectos</a>
+		    </li>
+		    <li><a href="#skills">
+		    	<i class="fas fa-chart-bar"></i>Habilidades</a>
+		    </li>
 	    <li><a href="mobile.html">Mobile</a></li>
 	  </ul>
       <!--JavaScript at end of body for optimized loading-->
       <section class="seccion" id="home">
 		<div class="effect-blur">
-			<img id="header-img" src="https://es.gravatar.com/userimage/76713196/45d3780e6fd6d7298f8f2360e603b835.jpg?size=200">
-        	<h1 id="Titulo">Integra Consultores de Ags</h1>
-        	<h3 class="subtitulo">Donde tus sueños se vuelven realidad</h3>
+			<img id="header-img" src="https://avatars0.githubusercontent.com/u/3460033?s=460&v=4">
+        	<h1 id="Titulo">Desarrollador Web</h1>
+        	<h3 class="subtitulo">Escribir Codigo es divertido</h3>
         	<div class="divisor"></div>
         	<ul class="social-icons icon-rounded list-unstyled list-inline">
         		<li class="social-icon">
-          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-github"></i></a>
+          		<a class="link" href=""><span></span><i class="fab fa-github"></i></a>
       			</li>
       			<li class="social-icon">
-          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-bitbucket"></i></a>
+          		<a class="link" href=""><span></span><i class="fab fa-bitbucket"></i></a>
       			</li>
       			<li class="social-icon">
-          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-codepen"></i></a>
+          		<a class="link" href=""><span></span><i class="fab fa-codepen"></i></a>
       			</li>
       			<li class="social-icon">
-          		<a class="link" href="https://twitter.com/elyak123"><span></span><i class="fab fa-linkedin"></i></a>
+          		<a class="link" href=""><span></span><i class="fab fa-linkedin"></i></a>
       			</li>
         	</ul>
         	</div>
@@ -251,21 +264,29 @@ nav a {
 
 				    <div class="col s12 m6 l4">
 				        <div class="card">
-				        <div class="card-image waves-effect waves-block waves-light">
-				          <img class="activator" src="https://materializecss.com/images/office.jpg">
-				        </div>
-				        <div class="card-content body">
-				          <span class="card-title activator grey-text text-darken-4">Blog de Canto Lirico<i class="material-icons right">more_vert</i></span>
-				          <p><a href="#">This is a link</a></p>
-				        </div>
-				        <div class="card-reveal">
-				          <span class="card-title grey-text text-darken-4">Logos<i class="material-icons right">close</i></span>
-				          <p>Node.js en el back-end</p>
-				          <p>Vue.js en el frontend</p>
-				          <p>Bootstrap CSS en el frontend</p>
-				          <p>Trabajé con patron MVC en Node.js</p>
-				        </div>
-				      </div> 
+				        	<div class="card-image waves-effect waves-block waves-light">
+				          		<img class="activator" src="img/project/blog-vocal-min.jpg">
+				        	</div>
+				        	<div class="card-content body">
+				          		<span class="card-title activator grey-text text-darken-4">Blog de Canto Lirico<i class="material-icons right">more_vert</i></span>
+				        	</div>
+				        	<div class="card-reveal">
+				          		<span class="card-title grey-text text-darken-4">Logos<i class="material-icons right">close</i></span>
+				          		<ul>
+					          		<li>node.js en el back-end</li>
+					          		<li>express </li>
+					          		<li>Bootstrap CSS en el frontend</li>
+					          		<li>Vue.js para renderizar vistas y crear componentes</li>   
+					      		</ul>
+				          		<div class="card-action back-action">
+				          			<ul class="social-icons icon-circle list-unstyled list-inline"> 
+				          			<li> <a href="https://bitbucket.org/edwight/proyecto-orientacion-vocal/src/master/"><i class="fab fa-bitbucket"></i></a> 
+				          			<li> <a href="https://orientacion-vocal.herokuapp.com/"><i class="fab fa-share-square"></i></a></li>
+				          			</ul>
+
+				        		</div>
+				      		</div> 
+				    	</div>
 				    </div>
 
 				    <div class="col s12 m6 l4">
@@ -289,7 +310,7 @@ nav a {
 				    <div class="col s12 m6 l4">
 				        <div class="card">
 				        <div class="card-image waves-effect waves-block waves-light">
-				          <img class="activator" src="https://materializecss.com/images/office.jpg">
+				          <img class="activator" src="img/project/photogram.jpg">
 				        </div>
 				        <div class="card-content body">
 				          <span class="card-title activator grey-text text-darken-4">Photogram Clon de Imstagram<i class="material-icons right">more_vert</i></span>
