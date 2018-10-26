@@ -130,7 +130,7 @@ nav {
     background-color: #f5f5f5;
 }
 nav a {
-    color: #6e6e6e;
+    color: #6e6e6e !important;
 }
 .effect-blur{
     width: 80%;

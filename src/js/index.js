@@ -262,9 +262,10 @@ const vm = new Vue({
 	                    link:null,
 	                    body:`<ul> 
 	                    
-	                    <li>Laravel en el back-end</li>
-	                    <li>Bootstrap CSS en el frontend</li>
-	                    <li>Mysql en la base de dato</li>
+	                    <li>Vue.js como framework de front-end</li>
+	                    <li>login social</li>
+	                    <li>autenticación con firebase</p>
+	                    <li>gestión de estados con Vuex </p>
 	                    </ul>`,
 	        },
 	        {
@@ -275,9 +276,9 @@ const vm = new Vue({
 	                    link:'https://republicofgamerscolombia.com/',
 	                    body:`<ul> 
 	                    
-	                    <li>Laravel en el back-end</li>
-	                    <li>Bootstrap CSS en el frontend</li>
-	                    <li>Mysql en la base de dato</li>
+	                    <li>Html 5</li>
+	                    <li>Bootstrap CSS en el front-end</li>
+	                    <li>Jquery</li>
 	                    </ul>`,
 	        },
 	       	{
@@ -288,9 +289,9 @@ const vm = new Vue({
 	                    link:'https://dellmedellin.com',
 	                    body:`<ul> 
 	                    
-	                    <li>Laravel en el back-end</li>
-	                    <li>Bootstrap CSS en el frontend</li>
-	                    <li>Mysql en la base de dato</li>
+	                    <li>Html 5</li>
+	                    <li>Bootstrap CSS en el front-end</li>
+	                    <li>Jquery</li>
 	                    </ul>`,
 	        }
 	    ]
