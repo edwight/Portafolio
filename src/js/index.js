@@ -72,10 +72,10 @@ Vue.component('about',{
                     <div class="card-stacked">
                         <div class="card-content">
                             <div class="about">
-                                    <p>Hola soy Edwight Delgado desarrollador Web (Backend y Frontend) soy de Venezuela.
-                                    Me encanta crear software y solucionar problemas con una gran variedad de herramentas como Php con laravel, NodeJS con express.
-                                    Trabajo en tecnologías del lado del cliente como: Html, Css, Javascript, Vue.js, Bootstrap, entre otras.
-                                    <p>Estos son algunos proyectos profesionales y personales que he realizado</p>
+                              <p>Hola soy Edwight Delgado desarrollador Web (Backend y Frontend) soy de Venezuela.
+                                Me encanta crear software y solucionar problemas con una gran variedad de herramentas como Php con laravel, NodeJS con express.
+                                Trabajo en tecnologías del lado del cliente como: Html, Css, Javascript, Vue.js, Bootstrap, entre otras.
+                              <p>Estos son algunos proyectos profesionales y personales que he realizado</p>
                             </div>	
                         </div>
                         
@@ -162,40 +162,38 @@ Vue.component('project',{
 	props:['cardProyect'],
 	template:`
 	<section id="project">
-                <h3>Proyectos</h3>
-                    <div class="container"> 
-                        <div class="row">
-                            <div v-for="card in cardProyect" class="col s12 m6 l4">
-                                <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" :src="card.img">
-                                </div>
-                                <div class="card-content body">
-                                  <span class="card-title activator grey-text text-darken-4">{{card.title}}<i class="material-icons right">more_vert</i></span>
+     <h3>Proyectos</h3>
+    <div class="container"> 
+      <div class="row">
+        <div v-for="card in cardProyect" class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" :src="card.img">
+            </div>
+            <div class="card-content body">
+              <span class="card-title activator grey-text text-darken-4">{{card.title}}<i class="material-icons right">more_vert</i></span>
                                   
-                                </div>
-                                <div class="card-reveal">
-                                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                  <ul v-html="card.body">
-                                            
-                                  </ul>
-                                  <div class="card-action back-action">
-                                    <ul class="social-icons icon-circle list-unstyled list-inline"> 
-                                      <li v-if="card.github"> <a :href="card.github"><i class="fab fa-github"></i></a></li> 
-                                      <li v-if="card.bitbucket"> <a :href="card.bitbucket"><i class="fab fa-bitbucket"></i></a> 
-                                      <li v-if="card.link"> <a :href="card.link"><i class="fas fa-share-square"></i></a></li>
-                                    </ul>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <ul v-html="card.body">
+                                          
+              </ul>
+              <div class="card-action back-action">
+                <ul class="social-icons icon-circle list-unstyled list-inline"> 
+                  <li v-if="card.github"> <a :href="card.github"><i class="fab fa-github"></i></a></li> 
+                  <li v-if="card.bitbucket"> <a :href="card.bitbucket"><i class="fab fa-bitbucket"></i></a> 
+                  <li v-if="card.link"> <a :href="card.link"><i class="fas fa-share-square"></i></a></li>
+                </ul>
+              </div>
 
-                                  </div>
-
-                                </div>
-                              </div> 
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+     </div>
+  </section>
 	`,
 	
 
@@ -256,16 +254,18 @@ const vm = new Vue({
 	        },
 	        {
 	                    title:'Experimental Ecommece App',
-	                    img:'img/project/ecommece.jpg',
-	                    github:null,
-	                    bitbucket:null,
+	                    img:'img/project/tienda.jpg',
+	                    github:'https://github.com/edwight/tienda',
+	                    bitbucket:'https://bitbucket.org/edwight/laravel-tienda/src',
 	                    link:null,
 	                    body:`<ul> 
-	                    
-	                    <li>Vue.js como framework de front-end</li>
-	                    <li>login social</li>
-	                    <li>autenticación con firebase</p>
+	                   
+	                    <li>API Rest </li>
+	                    <li>Backend con laravel 5.7</p>
+                      <li>Frontend con Vue 2</p>
 	                    <li>gestión de estados con Vuex </p>
+                      <li>Autenticacion Laravel Passport</p>
+                      <li>base de dato con Mysql</p>
 	                    </ul>`,
 	        },
 	        {
@@ -293,7 +293,21 @@ const vm = new Vue({
 	                    <li>Bootstrap CSS en el front-end</li>
 	                    <li>Jquery</li>
 	                    </ul>`,
-	        }
+	        },
+          {
+                      title:'Ecowuaylla Bio',
+                      img:'img/project/ecowuaylla.jpg',
+                      github:'https://github.com/edwight/ecowuaylla',
+                      bitbucket:null,
+                      link:'https://edwight.github.io/ecowuaylla/',
+                      body:`<ul> 
+                      
+                      <li>Html 5</li>
+                      <li>Bootstrap CSS en el front-end</li>
+                      <li>Jquery</li>
+                      <li>responsive design</li> 
+                      </ul>`,
+          }
 	    ]
     }
 }); 
